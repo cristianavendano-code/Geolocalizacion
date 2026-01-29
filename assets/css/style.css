@@ -1,0 +1,91 @@
+/* Configuración Profesional: Clean & White */
+:root {
+    --bg-pure-white: #ffffff;
+    --bg-offset: #fbfcfd;
+    --primary-blue: #0061ff; /* Azul profesional estándar */
+    --text-dark: #1a1f36;
+    --text-muted: #4f566b;
+    --border-color: #e3e8ee;
+}
+
+body {
+    background-color: var(--bg-pure-white);
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Fondo limpio sin degradados agresivos */
+.landing-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bg-pure-white);
+    /* Una cuadrícula de puntos casi invisible para dar textura de plano */
+    background-image: radial-gradient(#e3e8ee 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+
+/* Títulos con peso tipográfico alto (Pro) */
+.display-1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: var(--text-dark);
+    letter-spacing: -1.5px;
+}
+
+.text-highlight {
+    color: var(--primary-blue);
+}
+
+/* Tarjetas Estilo "SaaS": Fondos blancos, bordes finos, sombras suaves */
+.card, .glass-card {
+    background: var(--bg-pure-white) !important;
+    border: 1px solid var(--border-color) !important;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02) !important;
+    border-radius: 12px !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05) !important;
+    border-color: var(--primary-blue) !important;
+}
+
+/* Iconos y Badges */
+.icon-box {
+    width: 50px;
+    height: 50px;
+    background-color: #f0f4ff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-blue);
+}
+
+.badge.bg-primary {
+    background-color: #f0f4ff !important;
+    color: var(--primary-blue) !important;
+    border: 1px solid #d0dfff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Botón de Acción Profesional */
+.btn-action {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 12px 30px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    transition: background 0.2s;
+}
+
+.btn-action:hover {
+    background-color: #0052d9;
+    color: white;
+}
